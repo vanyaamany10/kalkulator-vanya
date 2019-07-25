@@ -1,0 +1,68 @@
+  <!DOCTYPE html>
+<html>
+
+<div>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="asset\css\stlye.css">
+
+    <head>
+        <style>
+            .outer {
+                border: 1px solid black;
+                padding: 5px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="outer">
+            <div class="kotak1">
+                <h3>PENJUMLAHAN</h3>
+                <input id="kal1" value="10"><br />
+                <input id="kal2" value="4"><br />
+                <input id="hasil">
+                <button onclick="hitung()">tambah</button><br />
+            </div>
+        </div>
+        <div class="outer">
+            <div class="kotak">
+                <h3>PERKALIAN</h3>
+                <input id="kal3" value="4"><br />
+                <input id="kal4" value="7"><br />
+                <input id="hasil1">
+                <button onclick="kali()">Kali</button><br />
+            </div>
+        </div>
+        <div class="outer">
+            <div class="kotak2">
+                <h3>PEMBAGIAN</h3>
+                <input id="kal5" value="36"><br />
+                <input id="kal6" value="6"><br />
+                <input id="hasil2"><br />
+                <button onclick="bagi()">Bagi</button><br />
+            </div>
+        </div>
+        <script>
+
+            function hitung() {
+                var angka3 = parseInt(document.getElementById('kal1').value)
+                var angka4 = parseInt(document.getElementById('kal2').value)
+                var hasil = angka3 + angka4;
+                document.getElementById('hasil').value = hasil;
+            }
+            function kali() {
+                var angka1 = parseInt(document.getElementById('kal3').value)
+                var angka2 = parseInt(document.getElementById('kal4').value)
+                var hasil = angka1 * angka2;
+                document.getElementById('hasil1').value = hasil;
+            }
+            function bagi() {
+                var angka5 = parseInt(document.getElementById('kal5').value)
+                var angka6 = parseInt(document.getElementById('kal6').value)
+                var hasil = angka5 / angka6;
+                document.getElementById('hasil2').value = hasil;
+            }    
+        </script>
+    </body>
+
+</html>
